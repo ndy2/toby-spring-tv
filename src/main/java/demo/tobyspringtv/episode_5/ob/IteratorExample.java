@@ -10,10 +10,12 @@ public class IteratorExample {
     // Pull     <-----> Push
     public static void main(String[] args) {
         //Iterable - 순회할 수 있는!
-        /*Iterable<Integer> iter = Arrays.asList(1, 2, 3, 4, 5);
-        for (Integer integer : iter) {  //for-each
+        /*Iterable<Integer> iter = Arrays.asList(1, 2, 3, 4, 5);*/
+        /*for (Integer integer : iter) {  //for-each
             System.out.println("integer = " + integer);
         }*/
+
+
 
         Iterator<Integer> iterator = new Iterator<>() {
             int i = 0;
@@ -29,6 +31,8 @@ public class IteratorExample {
                 return ++i;
             }
         };
+
+        //Iterable의 SAM인 iterator 구현
         Iterable<Integer> iter2 = () -> iterator;
         for (Integer integer : iter2) {
             System.out.println("integer = " + integer);

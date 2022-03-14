@@ -13,7 +13,8 @@ public class ObserverExample {
         public void run() {
             for (int i = 1; i <= 10; i++) {
                 setChanged();
-                notifyObservers(i); //push
+                notifyObservers(i);   //push 역할
+                // int i = it.next(); // pull 역할
             }
         }
     }

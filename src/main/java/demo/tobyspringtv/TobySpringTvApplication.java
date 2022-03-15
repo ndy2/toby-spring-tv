@@ -19,8 +19,8 @@ import java.util.concurrent.CompletableFuture;
 import java.util.concurrent.Future;
 
 @Slf4j
-@EnableAsync
-@SpringBootApplication
+//@EnableAsync
+//@SpringBootApplication
 public class TobySpringTvApplication {
 
     public static void main(String[] args) {

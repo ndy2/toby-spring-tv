@@ -25,8 +25,8 @@ import java.util.concurrent.ConcurrentLinkedQueue;
 import java.util.concurrent.Executors;
 
 @Slf4j
-@EnableAsync
-@SpringBootApplication
+//@EnableAsync
+//@SpringBootApplication
 public class TobySpringTv8Application {
 
     public static void main(String[] args) {

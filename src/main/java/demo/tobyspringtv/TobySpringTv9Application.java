@@ -46,8 +46,9 @@ public class TobySpringTv9Application {
             ListenableFuture<ResponseEntity<String>> result = rt.getForEntity("http://localhost:8081/service?req={req}", String.class, "hello" + idx);
             //getForEntity : 논-블로킹 메소드. -> 쓰레드 자원 낭비 X  여기서 2초 대기 X!
             //SpringMVC 가 callback 도 알아서 등록해줌
-
             return result;
         }
+
+
     }
 }
